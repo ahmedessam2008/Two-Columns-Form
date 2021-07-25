@@ -1,0 +1,66 @@
+/* Global Prop  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+label,
+input {
+  display: block;
+}
+.left,
+.right {
+  width: 48%;
+}
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  padding: 20px 0;
+}
+.form {
+  width: 800px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.form .left label {
+  position: relative;
+  width: fit-content;
+}
+.form .left label::after {
+  content: "*";
+  position: absolute;
+  top: 0;
+  right: -13px;
+  color: red;
+}
+label {
+  font-weight: 500;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+}
+button {
+  width: 100%;
+}
+textarea {
+  height: 50%;
+}
+button {
+  padding: 10px;
+  background-color: #009688;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+}
